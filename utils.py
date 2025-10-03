@@ -34,7 +34,7 @@ def print_bill_pdf(order_id):
     filename = f"facture_{order_id}.pdf"
     c = canvas.Canvas(filename, pagesize=A4)
     c.setFont("Helvetica-Bold", 14)
-    c.drawString(200, 800, "Restaurant Chez Toi")
+    c.drawString(200, 800, "Restaurant Software by Jp")
     c.setFont("Helvetica", 10)
     c.drawString(50, 770, f"Table : {table_id}")
     c.drawString(50, 755, f"Commande n° {order_id}")
